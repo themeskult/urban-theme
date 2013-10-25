@@ -3,8 +3,8 @@ Theme Name: Urban
 Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://underscores.me/
-Description: Description
-Version: 0.1
+Description: Simple Theme
+Version: 0.2
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -438,8 +438,6 @@ article.post .entry-content p object {
   width: 100%;
   float: none;
 }
-article .entry-content img,
-article.post .entry-content img,
 article .entry-content iframe,
 article.post .entry-content iframe,
 article .entry-content object,
@@ -456,11 +454,6 @@ article .entry-content p object,
 article.post .entry-content p object {
   min-height: 250px;
   min-width: 0;
-}
-article .entry-content img,
-article.post .entry-content img {
-  height: auto;
-  width: auto;
 }
 article .entry-content .embed-container,
 article.post .entry-content .embed-container {
