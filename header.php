@@ -26,7 +26,7 @@
 		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 		<div class="site-description">
-			Gravity on mars is the portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. 
+			Gravity On Mars is the portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. 
 			He lives in Buenos Aires,  works on <a href="http://themeskult.com">Themes Kult</a> and writes about Design and Development.
 		</div>
 
