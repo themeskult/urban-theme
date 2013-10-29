@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v0.5
+Version: v0.6
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -338,15 +338,15 @@ footer.site-footer nav li.current_page_item a,
   border-color: #000;
   color: #000;
 }
-header.site-header nav li:nth-child(2) a:hover,
-footer.site-footer nav li:nth-child(2) a:hover,
-.site-main [class*="navigation"].post-navigation nav li:nth-child(2) a:hover {
-  color: #1abc9c;
-  border-color: #1abc9c;
-}
 header.site-header nav li:nth-child(3) a:hover,
 footer.site-footer nav li:nth-child(3) a:hover,
 .site-main [class*="navigation"].post-navigation nav li:nth-child(3) a:hover {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+header.site-header nav li:nth-child(2) a:hover,
+footer.site-footer nav li:nth-child(2) a:hover,
+.site-main [class*="navigation"].post-navigation nav li:nth-child(2) a:hover {
   color: #3498db;
   border-color: #3498db;
 }
@@ -480,13 +480,17 @@ article.post footer {
 .post-home a {
   display: block;
 }
-.post-home .date {
+.post-home a .date {
   float: right;
   font-style: italic;
   font-weight: normal;
   color: #999;
   font-size: 13px;
   padding-top: 2px;
+  display: none;
+}
+.post-home a:hover .date {
+  display: block;
 }
 body.home article.post {
   margin-top: 20px;
@@ -519,7 +523,7 @@ body.single article .entry-title {
   margin: 0;
 }
 body.single article .entry-content {
-  font-size: 18px;
+  font-size: 16px;
 }
 body.single article .entry-content p:first-child {
   font-size: 20px;
