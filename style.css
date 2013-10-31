@@ -537,7 +537,7 @@ body.single article .entry-header .entry-meta {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-body.single article .entry-header .entry-meta:hover .entry-meta {
+body.single article .entry-header:hover .entry-meta {
   opacity: 1;
 }
 body.single article .entry-content {
