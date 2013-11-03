@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v1.04
+Version: v1.05
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -242,6 +242,22 @@ object {
 body {
   color: #333;
   -webkit-font-smoothing: antialiased;
+}
+body {
+  display: block;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-in;
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 h1,
 h2,
