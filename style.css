@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v1.02
+Version: v1.03
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -300,8 +300,6 @@ header.site-header .site-title {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-  display: inline-block;
-  float: left;
 }
 header.site-header .site-title a {
   text-decoration: none;
@@ -309,9 +307,9 @@ header.site-header .site-title a {
 header.site-header .site-description {
   color: #999;
   font-size: 14px;
-  line-height: 1.5;
-  display: inline-block;
-  float: left;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 header.site-header .site-description a {
   font-weight: normal;
@@ -327,7 +325,7 @@ header.site-header nav.main-navigation {
   left: 0;
   text-align: right;
   font-size: 13px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   padding: 20px 0;
 }
 header.site-header nav.main-navigation li {
@@ -460,10 +458,17 @@ article.post footer {
 body.home .site-title a {
   color: #00f;
 }
+body.home .post-home {
+  margin: 0;
+}
+body.home .post-home h4 {
+  margin: 0;
+}
 body.home .post-home a {
   display: block;
   font-weight: normal;
   font-size: 14px;
+  padding: 10px 0;
 }
 body.home .post-home a .date {
   font-weight: normal;
@@ -561,7 +566,7 @@ body.single article footer .author-box {
   padding-bottom: 26px;
   color: #666;
   position: relative;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 body.single article footer .author-box img {
   border-radius: 3px;
