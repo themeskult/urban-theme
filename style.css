@@ -258,7 +258,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #00f;
 }
 .entry-content a:hover {
   text-decoration: underline;
@@ -310,7 +310,6 @@ header.site-header .site-description {
   float: left;
 }
 header.site-header .site-description a {
-  color: #000;
   font-weight: normal;
 }
 header.site-header nav.main-navigation {
@@ -331,7 +330,6 @@ header.site-header nav.main-navigation li {
 }
 header.site-header nav.main-navigation li a {
   font-weight: normal;
-  border-bottom: 3px solid #eee;
   padding-bottom: 2px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -341,7 +339,7 @@ header.site-header nav.main-navigation li a {
   display: inline-block;
 }
 header.site-header nav.main-navigation li a:hover {
-  color: #333;
+  color: #800080;
   border-color: #333;
 }
 header.site-header nav.main-navigation li.current_page_item a {
@@ -510,7 +508,7 @@ body.single article .entry-header:hover .entry-meta {
   opacity: 1;
 }
 body.single article .entry-content {
-  font-size: 18px;
+  font-size: 17px;
 }
 body.single article .entry-content p:first-child {
   font-size: 20px;
