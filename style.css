@@ -484,15 +484,18 @@ body.home .post-home a {
   font-weight: normal;
   font-size: 14px;
   padding: 10px 0;
+  opacity: 0.5;
 }
 body.home .post-home a .date {
   font-weight: normal;
   font-size: 12px;
   width: 140px;
   display: inline-block;
-  opacity: 0.3;
 }
-body.home .post-home a:hover .date {
+body.home .post-home a:hover {
+  opacity: 1;
+}
+body.home .post-home:first-child a {
   opacity: 1;
 }
 iframe#twitter-widget-0.twitter-tweet.twitter-tweet-rendered {
