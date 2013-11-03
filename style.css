@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v0.95
+Version: v0.96
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -279,84 +279,6 @@ footer.site-footer,
   margin-left: auto;
   margin-right: auto;
 }
-header.site-header .site-title,
-footer.site-footer .site-title,
-.site-main [class*="navigation"].post-navigation .site-title {
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-header.site-header .site-title a,
-footer.site-footer .site-title a,
-.site-main [class*="navigation"].post-navigation .site-title a {
-  color: #000;
-  text-decoration: none;
-}
-header.site-header .site-description,
-footer.site-footer .site-description,
-.site-main [class*="navigation"].post-navigation .site-description {
-  margin: 20px 0;
-  color: #666;
-}
-header.site-header .site-description a,
-footer.site-footer .site-description a,
-.site-main [class*="navigation"].post-navigation .site-description a {
-  color: #000;
-  font-weight: normal;
-}
-header.site-header nav li,
-footer.site-footer nav li,
-.site-main [class*="navigation"].post-navigation nav li {
-  margin-right: 20px;
-}
-header.site-header nav li a,
-footer.site-footer nav li a,
-.site-main [class*="navigation"].post-navigation nav li a {
-  font-weight: normal;
-  border-bottom: 3px solid #eee;
-  padding-bottom: 2px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-header.site-header nav li a:hover,
-footer.site-footer nav li a:hover,
-.site-main [class*="navigation"].post-navigation nav li a:hover {
-  color: #e74c3c;
-  border-color: #e74c3c;
-}
-header.site-header nav li.current_page_item a,
-footer.site-footer nav li.current_page_item a,
-.site-main [class*="navigation"].post-navigation nav li.current_page_item a {
-  border-color: #000;
-  color: #000;
-}
-header.site-header nav li:nth-child(3) a:hover,
-footer.site-footer nav li:nth-child(3) a:hover,
-.site-main [class*="navigation"].post-navigation nav li:nth-child(3) a:hover {
-  color: #1abc9c;
-  border-color: #1abc9c;
-}
-header.site-header nav li:nth-child(2) a:hover,
-footer.site-footer nav li:nth-child(2) a:hover,
-.site-main [class*="navigation"].post-navigation nav li:nth-child(2) a:hover {
-  color: #3498db;
-  border-color: #3498db;
-}
-header.site-header nav li:nth-child(4) a:hover,
-footer.site-footer nav li:nth-child(4) a:hover,
-.site-main [class*="navigation"].post-navigation nav li:nth-child(4) a:hover {
-  color: #8e44ad;
-  border-color: #8e44ad;
-}
-header.site-header nav li:nth-child(5) a:hover,
-footer.site-footer nav li:nth-child(5) a:hover,
-.site-main [class*="navigation"].post-navigation nav li:nth-child(5) a:hover {
-  color: #1abc9c;
-  border-color: #1abc9c;
-}
 body {
   max-width: 570px;
   margin-left: auto;
@@ -367,7 +289,64 @@ body {
   margin-bottom: 100px;
 }
 header.site-header {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+header.site-header .site-title {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  float: left;
+}
+header.site-header .site-title a {
+  color: #000;
+  text-decoration: none;
+}
+header.site-header .site-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+  float: left;
+}
+header.site-header .site-description a {
+  color: #000;
+  font-weight: normal;
+}
+header.site-header nav.main-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: right;
+  font-size: 13px;
+  background: #fff;
+  padding: 20px 0;
+}
+header.site-header nav.main-navigation li {
+  margin-right: 30px;
+  display: inline-block;
+  clear: none;
+  float: none;
+}
+header.site-header nav.main-navigation li a {
+  font-weight: normal;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+header.site-header nav.main-navigation li a:hover {
+  color: #333;
+  border-color: #333;
+}
+header.site-header nav.main-navigation li.current_page_item a {
+  border-color: #000;
+  color: #000;
 }
 article .entry-meta,
 article.post .entry-meta {
@@ -477,36 +456,34 @@ article.post footer {
   display: inline-block;
   color: #00f;
 }
-.post-home {
-  border-top: 1px solid #eee;
+body.home {
+  font-family: "calluna", serif;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.post-home a {
+body.home .post-home {
+  font-family: "calluna", serif;
+}
+body.home .post-home a {
+  font-family: "calluna", serif;
   display: block;
-}
-.post-home a .date {
-  float: right;
-  font-style: italic;
   font-weight: normal;
-  color: #999;
-  font-size: 13px;
+  font-size: 14px;
+}
+body.home .post-home a .date {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
   padding-top: 2px;
-  display: none;
+  width: 140px;
+  display: inline-block;
 }
-.post-home a:hover .date {
-  display: block;
+body.home .post-home a:hover {
+  color: #00f;
 }
-body.home article.post {
-  margin-top: 20px;
-}
-body.home article.post h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-body.home .page-content,
-body.home .entry-content,
-body.home .entry-summary {
-  margin-top: 10px;
+body.home .post-home a:hover .date {
+  color: #00f;
 }
 iframe#twitter-widget-0.twitter-tweet.twitter-tweet-rendered {
   max-width: 570px !important;
@@ -541,7 +518,7 @@ body.single article .entry-header:hover .entry-meta {
   opacity: 1;
 }
 body.single article .entry-content {
-  font-size: 17px;
+  font-size: 18px;
 }
 body.single article .entry-content p:first-child {
   font-size: 20px;
@@ -595,7 +572,7 @@ body.single article footer .author-box {
   padding-left: 90px;
 }
 body.single article footer .author-box img {
-  border-radius: 100px;
+  border-radius: 3px;
   max-width: 60px;
   display: inline-block;
   position: absolute;
@@ -615,6 +592,10 @@ footer.site-footer {
   display: none;
 }
 @media screen and (max-width: 500px) {
+  body.home .post-home a .date {
+    display: block;
+    margin-bottom: 5px;
+  }
   body.single article .entry-title {
     font-size: 50px;
   }

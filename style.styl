@@ -329,59 +329,6 @@ header.site-header, footer.site-footer, .site-main [class*="navigation"].post-na
 	max-width: 570px;
 	margin-left: auto;
 	margin-right: auto;
-	.site-title 
-		text-transform: uppercase;
-		font-size: 13px;
-		letter-spacing: 1px;
-		a 
-			color: #000;
-			text-decoration: none
-	.site-description
-		margin: 20px 0;
-		color: #666;
-		a 
-			color: #000;
-			font-weight: normal;
-	nav 
-		li 
-			margin-right: 20px;
-			a 
-				font-weight: normal
-				border-bottom: 3px solid #eee;
-				padding-bottom: 2px;
-				-webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				transition: all 0.3s ease;
-				&:hover 
-					color: #e74c3c;
-					border-color: #e74c3c;
-
-			&.current_page_item
-				a 
-					border-color: black;
-					color: black;
-
-			&:nth-child(3) 
-				a:hover 
-					color: #1abc9c;
-					border-color: #1abc9c;
-
-			&:nth-child(2) 
-				a:hover 
-					color: #3498db;
-					border-color: #3498db;
-
-			&:nth-child(4) 
-				a:hover 
-					color: #8e44ad;
-					border-color: #8e44ad;
-
-			&:nth-child(5) 
-				a:hover 
-					color: #1abc9c;
-					border-color: #1abc9c;
 
 body 
 	max-width: 570px;
@@ -394,8 +341,58 @@ body
 
 
 header.site-header
-	margin-bottom: 40px;
+	margin-bottom: 10px;
+	.site-title 
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 1px;
+		display: inline-block
+		float: left
+		a 
+			color: #000;
+			text-decoration: none
+	.site-description
+		color: #666;
+		font-size: 14px;
+		line-height: 1.5;
+		display: inline-block
+		float: left
+		a 
+			color: #000;
+			font-weight: normal;
+	nav.main-navigation 
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		text-align: right
+		font-size: 13px;
+		background: white;
+		padding: 20px 0;
+		li 
+			margin-right: 30px;
+			display: inline-block
+			clear: none;
+			float: none;
 
+			a 
+				font-weight: normal
+				border-bottom: 3px solid #eee;
+				padding-bottom: 2px;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				display: inline-block
+				&:hover 
+					color: #333;
+					border-color: #333;
+
+			&.current_page_item
+				a 
+					border-color: black;
+					color: black;
 
 
 article, article.post
@@ -457,32 +454,32 @@ article, article.post
 	display: inline-block;
 	color: blue;
 
-.post-home 
-	border-top: 1px solid #eee;
-	a 
-		display: block;
-		.date 
-			float: right
-			font-style: italic
-			font-weight: normal
-			color: #999;
-			font-size: 13px;
-			padding-top: 2px;
-			display: none
-
-		&:hover 
-			.date 
-				display: block
 body.home
-	article.post 
-		margin-top: 20px;
-		h1
-			font-size: 40px;
-			margin-top: 0;
-			margin-bottom: 10px;
+	font-family: "calluna",serif;
+	background-color: #fff;
+	margin-left: 10%;
+	margin-right: 10%;
+	.post-home 
+		// border-top: 1px solid #eee;
+		font-family: "calluna",serif;
+		a 
+			font-family: "calluna",serif;
+			display: block;
+			font-weight: normal
+			font-size: 14px;
+			// padding: 14px;
+			.date 
+				font-weight: normal
+				color: #666;
+				font-size: 12px;
+				padding-top: 2px;
+				width: 140px;
+				display: inline-block
 
-	.page-content, .entry-content, .entry-summary
-		margin-top: 10px;
+			&:hover 
+				color: blue;
+				.date 
+					color: blue;
 
 
 iframe#twitter-widget-0.twitter-tweet.twitter-tweet-rendered
@@ -519,7 +516,7 @@ body.single
 					opacity: 1;
 
 		.entry-content
-			font-size: 17px;
+			font-size: 18px;
 			p:first-child
 				font-size: 20px;
 				color: black;
@@ -559,7 +556,7 @@ body.single
 				padding-left: 90px;
 
 				img 
-					border-radius: 100px;
+					border-radius: 3px;
 					max-width: 60px;
 					display: inline-block
 					position: absolute;
@@ -578,6 +575,9 @@ footer.site-footer
 
 
 @media screen and (max-width: 500px)
+	body.home .post-home a .date
+		display: block
+		margin-bottom: 5px;
 	body.single article .entry-title 
 		font-size: 50px;
 

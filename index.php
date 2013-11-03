@@ -22,22 +22,15 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php $key++ ?>
 
-				<?php if ($key == 1): 
-
-					get_template_part( 'content', get_post_format() );
-
-				else: ?>
-
 					<article class="post-home">
 						<h4>
 							<a href="<?php echo the_permalink() ?>">
-								<span class="entry-title"><?php echo the_title() ?></span>
 								<span class="date"><?php echo the_date() ?></span>
+								<span class="entry-title"><?php echo the_title() ?></span>
 							</a>
 						</h4>
 					</article>
 
-				<?php endif; ?>
 
 			<?php endwhile; ?>
 
