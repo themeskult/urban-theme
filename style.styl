@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v1.08
+Version: v1.09
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -503,8 +503,10 @@ body.single
 	margin-left: auto;
 	margin-right: auto;
 	header.site-header 
-		nav, .site-description
+		.site-description
 			display: none
+		nav 
+			position: absolute;
 
 	article 
 		margin-top: 40px;
@@ -561,8 +563,6 @@ body.single
 				margin-top: 40px;
 				margin-bottom: 40px;
 				font-size: 120%;
-				border-top: 1px solid #eee;
-				border-bottom: 1px solid #eee;
 				padding-top: 10px;
 				padding-bottom: 26px;
 				color: #666;
@@ -570,7 +570,7 @@ body.single
 				padding-left: 80px;
 
 				img 
-					border-radius: 3px;
+					border-radius: 100px;
 					max-width: 60px;
 					display: inline-block
 					position: absolute;
@@ -585,6 +585,8 @@ body.single
 	display: none
 
 footer.site-footer
+	font-size: 11px;
+	text-align: right
 	display: none
 
 
