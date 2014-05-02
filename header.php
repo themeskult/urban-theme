@@ -29,7 +29,7 @@
 		<div class="site-description">
 			<p>
 				Portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. <br/>
-				He lives in Buenos Aires,  works on <a href="http://themeskult.com">Themes Kult</a> and writes about Design and Development.</p>
+				He lives in Buenos Aires,  works on <a href="http://auth0.com">Auth0</a> and writes about Design and Development.</p>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
