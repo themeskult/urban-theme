@@ -17,7 +17,7 @@ get_header();
 
     rsort( $sticky );
 
-    $sticky = array_slice( $sticky, 0, 1 );
+    // $sticky = array_slice( $sticky, 0, 10 );
 
      query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
 
