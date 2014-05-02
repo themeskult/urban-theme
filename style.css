@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v1.10
+Version: v1.12
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -320,6 +320,7 @@ header.site-header .site-title {
 }
 header.site-header .site-title a {
   text-decoration: none;
+  color: #00f;
 }
 header.site-header .site-description {
   color: #999;
@@ -353,15 +354,18 @@ header.site-header nav.main-navigation li {
 }
 header.site-header nav.main-navigation li a {
   font-weight: normal;
-  padding-bottom: 2px;
   display: inline-block;
+  font-family: "freight-sans-pro";
+  border-radius: 100px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 header.site-header nav.main-navigation li a:hover {
-  color: #800080;
+  color: #00f;
   border-color: #333;
 }
 header.site-header nav.main-navigation li.current_page_item a {
-  color: #800080;
+  color: #00f;
 }
 article .entry-meta,
 article.post .entry-meta {
@@ -471,9 +475,6 @@ article.post footer {
   display: inline-block;
   color: #00f;
 }
-body.home .site-title a {
-  color: #00f;
-}
 body.home .post-home {
   margin: 0;
 }
@@ -520,9 +521,10 @@ body.single article {
 }
 body.single article .entry-title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.2;
   margin: 0;
+  margin-bottom: 10px;
 }
 body.single article .entry-header .entry-meta {
   opacity: 0;
@@ -536,11 +538,8 @@ body.single article .entry-header:hover .entry-meta {
   opacity: 1;
 }
 body.single article .entry-content {
-  font-size: 17px;
-}
-body.single article .entry-content p:first-child {
-  font-size: 20px;
-  color: #000;
+  font-size: 18px;
+  margin-top: 0;
 }
 body.single article p,
 body.single article .entry-meta,
@@ -608,6 +607,12 @@ footer.site-footer {
   font-size: 11px;
   text-align: right;
   display: none;
+}
+#gradient {
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
 }
 @media screen and (max-width: 500px) {
   body {

@@ -11,7 +11,18 @@
  * @package urban
  */
 
-get_header(); ?>
+get_header(); 
+
+  $sticky = get_option( 'sticky_posts' );
+
+    rsort( $sticky );
+
+    $sticky = array_slice( $sticky, 0, 1 );
+
+     query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
+
+
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

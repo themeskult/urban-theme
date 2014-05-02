@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v1.10
+Version: v1.12
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -370,6 +370,8 @@ header.site-header
 		letter-spacing: 1px;
 		a 
 			text-decoration: none
+			color: blue;
+
 	.site-description
 		color: #999;
 		font-size: 14px;
@@ -400,15 +402,21 @@ header.site-header
 
 			a 
 				font-weight: normal
-				padding-bottom: 2px;
 				display: inline-block
+				font-family: "freight-sans-pro";
+				// text-transform: uppercase
+				// border: 1px solid #ccc;
+				// padding: 4px 10px;
+				border-radius: 100px;
+				font-size: 12px;
+				letter-spacing: 1px;
 				&:hover 
-					color: purple;
+					color: blue;
 					border-color: #333;
 
 			&.current_page_item
 				a 
-					color: purple;
+					color: blue;
 
 
 article, article.post
@@ -471,8 +479,6 @@ html
 	// border-left: 10px solid blue;
 
 body.home
-	.site-title a
-		color: blue
 	.post-home 
 		margin: 0;
 		h4 
@@ -515,9 +521,10 @@ body.single
 
 		.entry-title
 			font-weight: 900;
-			font-size: 44px;
+			font-size: 40px;
 			line-height: 1.2;
 			margin: 0;
+			margin-bottom: 10px;
 
 		.entry-header
 			.entry-meta 
@@ -533,10 +540,11 @@ body.single
 					opacity: 1;
 
 		.entry-content
-			font-size: 17px;
+			font-size: 18px;
+			margin-top: 0;
 			p:first-child
-				font-size: 20px;
-				color: black;
+				// font-size: 20px;
+				// color: black;
 
 		p, .entry-meta, .entry-title, h1,h2,h3,h4,h5,h6, pre, ul, ol, blockquote
 			max-width: 580px;
@@ -590,6 +598,12 @@ footer.site-footer
 	text-align: right
 	display: none
 
+
+#gradient
+	width: 100%;
+	height: 800px;
+	padding: 0px;
+	margin: 0px;
 
 @media screen and (max-width: 500px)
 	body 
