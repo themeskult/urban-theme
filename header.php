@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script type="text/javascript" src="//use.typekit.net/zzv8zdh.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <?php wp_head(); ?>
 </head>
 
@@ -34,7 +35,6 @@
 			<div>
 
 				<a href="https://twitter.com/gravityonmars" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @gravityonmars</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 			</div>
 		</div>
@@ -47,4 +47,6 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+
+	<div class="line-gradient"></div>
 	<div id="content" class="site-content">
