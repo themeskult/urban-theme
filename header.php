@@ -30,6 +30,13 @@
 			<p>
 				Portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. <br/>
 				He lives in Buenos Aires,  works on <a href="http://auth0.com">Auth0</a> and writes about Design and Development.</p>
+
+			<div>
+
+				<a href="https://twitter.com/gravityonmars" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @gravityonmars</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+			</div>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
