@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v2.0
+Version: v2.1
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -347,7 +347,7 @@ blockquote
 	margin-left: 0;
 
 
-header.site-header, footer.site-footer, header.site-header, .post-home h4, .page .site-content, .site-main [class*="navigation"].post-navigation
+header.site-header, footer.site-footer, .site-description, header.site-header, .post-home h4, .page .site-content, .site-main [class*="navigation"].post-navigation
 	max-width: 570px;
 	margin-left: auto;
 	margin-right: auto;
@@ -374,18 +374,7 @@ header.site-header
 			font-family: "freight-sans-pro";
 			font-weight: bold
 
-	.site-description
-		color: #999;
-		font-size: 18px;
-		line-height: 2.2;
-		position: fixed;
-		padding-bottom: 20px;
-		bottom: 0;
-		a 
-			font-weight: normal;
-			color: #666;
-			&:hover 
-				color: blue;
+
 
 	nav.main-navigation 
 		position: fixed;
@@ -423,9 +412,21 @@ header.site-header
 
 
 
+.site-description
+	color: #999;
+	font-size: 18px;
+	line-height: 2.2;
+	padding-bottom: 20px;
+	margin-top: 100px;
+	a 
+		font-weight: normal;
+		color: #666;
+		&:hover 
+			color: blue;
+
 body.home
 	
-	header.site-header, .post-home h4 
+	header.site-header, .post-home h4, .site-description
 		max-width: 66%;
 	
 	.post-home 
@@ -649,7 +650,7 @@ footer.site-footer
 
 
 	body.home 
-		.post-home h4, header.site-header
+		.post-home h4, header.site-header, .site-description
 			max-width: 100%;
 		.post-home a .date
 			display: block

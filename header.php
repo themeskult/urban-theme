@@ -27,13 +27,6 @@
 	<header id="masthead" class="site-header" role="banner">
 		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-		<div class="site-description">
-			<p>
-				Portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. <br/>
-				He lives in Buenos Aires,  works on <a href="http://auth0.com">Auth0</a> and writes about Design and Development.</p>
-
-		</div>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'urban' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'urban' ); ?></a>
