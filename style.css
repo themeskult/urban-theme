@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v2.2
+Version: v2.3
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -295,12 +295,9 @@ blockquote {
   padding-left: 20px;
   margin-left: 0;
 }
-header.site-header,
-footer.site-footer,
 .site-description,
+.content-area,
 header.site-header,
-.post-home h4,
-.page .site-content,
 .site-main [class*="navigation"].post-navigation {
   max-width: 570px;
   margin-left: auto;
@@ -311,8 +308,8 @@ header.site-header,
 body {
   padding: 0;
   margin: 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 header.site-header {
   padding-left: 20px;
@@ -365,7 +362,6 @@ header.site-header nav.main-navigation li.current_page_item a {
   color: #999;
   font-size: 18px;
   line-height: 2.2;
-  padding-bottom: 20px;
   margin-top: 80px;
 }
 .site-description a {
@@ -374,6 +370,10 @@ header.site-header nav.main-navigation li.current_page_item a {
 }
 .site-description a:hover {
   color: #00f;
+}
+body.home .site-content {
+  max-width: 100%;
+  padding: 0;
 }
 body.home header.site-header,
 body.home .post-home h4,
@@ -549,8 +549,11 @@ body.single header.site-header .site-description {
 body.single header.site-header nav {
   position: absolute;
 }
+body.single #primary.content-area {
+  max-width: 100%;
+}
 body.single article {
-  margin-top: 40px;
+  margin-top: 0;
   text-align: center;
 }
 body.single article .entry-title {
@@ -679,8 +682,5 @@ footer.site-footer {
   }
   body.single .entry-meta {
     opacity: 1 !important;
-  }
-  body.single .site-content {
-    padding: 0 20px;
   }
 }

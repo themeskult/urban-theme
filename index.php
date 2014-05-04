@@ -24,7 +24,7 @@ get_header();
 
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" >
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -33,14 +33,14 @@ get_header();
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php $key++ ?>
 
-					<article class="post-home">
-						<h4>
-							<a href="<?php echo the_permalink() ?>">
-								<span class="date"><?php echo the_date() ?></span>
-								<span class="entry-title"><?php echo the_title() ?></span>
-							</a>
-						</h4>
-					</article>
+				<article class="post-home">
+					<h4 class="content-area">
+						<a href="<?php echo the_permalink() ?>">
+							<span class="date"><?php echo the_date() ?></span>
+							<span class="entry-title"><?php echo the_title() ?></span>
+						</a>
+					</h4>
+				</article>
 
 
 			<?php endwhile; ?>

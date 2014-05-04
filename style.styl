@@ -4,7 +4,7 @@ Theme URI: http://themeskult.me/
 Author: Ricardo Rauch (@themeskult)
 Author URI: http://themeskult.com/
 Description: Simple Theme
-Version: v2.2
+Version: v2.3
 License: GNU General Public License
 License URI: license.txt
 Text Domain: urban
@@ -347,7 +347,7 @@ blockquote
 	margin-left: 0;
 
 
-header.site-header, footer.site-footer, .site-description, header.site-header, .post-home h4, .page .site-content, .site-main [class*="navigation"].post-navigation
+.site-description, .content-area, header.site-header,  .site-main [class*="navigation"].post-navigation
 	max-width: 570px;
 	margin-left: auto;
 	margin-right: auto;
@@ -357,8 +357,8 @@ header.site-header, footer.site-footer, .site-description, header.site-header, .
 body 
 	padding: 0;
 	margin: 0;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 
 header.site-header
 	padding-left: 20px;
@@ -416,7 +416,6 @@ header.site-header
 	color: #999;
 	font-size: 18px;
 	line-height: 2.2;
-	padding-bottom: 20px;
 	margin-top: 80px;
 	a 
 		font-weight: normal;
@@ -426,6 +425,10 @@ header.site-header
 
 body.home
 	
+	.site-content
+		max-width: 100%
+		padding: 0;
+
 	header.site-header, .post-home h4, .site-description
 		max-width: 66%;
 	
@@ -545,8 +548,12 @@ body.single
 		nav 
 			position: absolute;
 
+
+	#primary.content-area
+		max-width: 100%;
+
 	article 
-		margin-top: 40px;
+		margin-top: 0;
 		text-align: center
 
 		.entry-title
@@ -660,14 +667,14 @@ footer.site-footer
 			opacity: 1;
 	
 	body.single 
+
 		article .entry-title 
 			font-size: 30px;
 			line-height 1.5;
 		.entry-meta
 			opacity: 1 !important;
 
-		.site-content
-			padding: 0 20px;
+		
 
 
 

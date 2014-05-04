@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<div class="site-description">
+	<div class="site-description content-area">
 		<p>
 			Portfolio and journal of <a href="http://twitter.com/gravityonmars">Ricardo Rauch</a>, a designer/developer. <br/>
 			He lives in Buenos Aires,  works on <a href="http://auth0.com">Auth0</a> and writes about Design and Development.</p>
